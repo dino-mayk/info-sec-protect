@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Средства защиты информации от несанкционированного доступа</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.7;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0d47a1;
+    color:white;
+    padding:14px 0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,0.2);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+.hero{
+    margin-top:75px;
+    height:520px;
+    background:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.65);
+    padding:35px;
+    border-radius:15px;
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:30px;
+}
+
+h3{
+    margin-bottom:10px;
+}
+
+.text{
+    max-width:1000px;
+    margin:auto;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.info-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<ul>
+<li><a href="#about">Определение</a></li>
+<li><a href="#threats">Угрозы</a></li>
+<li><a href="#types">Средства защиты</a></li>
+<li><a href="#methods">Методы</a></li>
+<li><a href="#examples">Примеры</a></li>
+<li><a href="#security">Информационная безопасность</a></li>
+<li><a href="#law">Закон</a></li>
+<li><a href="#conclusion">Итог</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Защита информации</h1>
+<p>Комплекс мер по предотвращению несанкционированного доступа и утечки данных</p>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>Что такое защита информации?</h2>
+
+<div class="info-box">
+Защита информации — это совокупность методов, технологий и организационных мер,
+направленных на обеспечение конфиденциальности, целостности и доступности данных.
+</div>
+
+<div class="info-box">
+Она применяется в государственных системах, банках, компаниях и личных устройствах пользователей.
+</div>
+
+</div>
+</section>
+
+<section id="threats">
+<div class="container">
+<h2>Основные угрозы</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Вирусы</h3>
+<p>Вредоносные программы, нарушающие работу систем.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Хакерские атаки</h3>
+<p>Попытки несанкционированного доступа к данным.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Фишинг</h3>
+<p>Обман пользователей с целью получения данных.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Утечка данных</h3>
+<p>Передача информации третьим лицам.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="types">
+<div class="container">
+<h2>Средства защиты информации</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7">
+<div class="card-content">
+<h3>Аутентификация</h3>
+<p>Проверка личности пользователя.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+<div class="card-content">
+<h3>Шифрование</h3>
+<p>Защищённое преобразование данных.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<div class="card-content">
+<h3>Антивирус</h3>
+<p>Защита от вредоносного ПО.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931">
+<div class="card-content">
+<h3>Firewall</h3>
+<p>Контроль сетевого трафика.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="methods">
+<div class="container">
+<h2>Методы защиты</h2>
+
+<div class="info-box">
+Методы защиты делятся на технические, программные и организационные.
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+<div class="card-content">
+<h3>Технические</h3>
+<p>Аппаратные средства защиты и контроль доступа.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+<div class="card-content">
+<h3>Программные</h3>
+<p>ПО для защиты информации.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526378722484-cc93f3f6a8e0">
+<div class="card-content">
+<h3>Организационные</h3>
+<p>Правила и политики безопасности.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- НОВЫЙ РАЗДЕЛ -->
+<section id="cyberculture">
+<div class="container">
+<h2>Кибергигиена пользователей</h2>
+
+<div class="info-box">
+Кибергигиена — это правила безопасного поведения в интернете, которые помогают избежать атак и утечек данных.
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb">
+<div class="card-content">
+<h3>Сложные пароли</h3>
+<p>Использование уникальных и сложных комбинаций.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935">
+<div class="card-content">
+<h3>Двухфакторная защита</h3>
+<p>Дополнительный уровень безопасности входа.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f">
+<div class="card-content">
+<h3>Осторожность в сети</h3>
+<p>Не переходить по подозрительным ссылкам.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="examples">
+<div class="container">
+<h2>Примеры систем защиты</h2>
+
+<div class="info-box">
+Современные системы защиты используются в банках, госструктурах и IT-компаниях.
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<div class="card-content">
+<h3>Windows Defender</h3>
+<p>Встроенная защита Windows.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5">
+<div class="card-content">
+<h3>Linux Security</h3>
+<p>Безопасные серверные решения.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<div class="card-content">
+<h3>Cloud Security</h3>
+<p>Защита облачных данных.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="law">
+<div class="container">
+<h2>Законодательство</h2>
+
+<div class="info-box">
+Защита информации регулируется федеральными законами и стандартами безопасности.
+</div>
+
+<div class="info-box">
+Организации обязаны защищать персональные данные пользователей.
+</div>
+
+</div>
+</section>
+
+<section id="conclusion">
+<div class="container">
+<h2>Итог</h2>
+
+<div class="info-box">
+Комплексная защита информации снижает риски атак и утечек данных.
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Информационная безопасность</p>
+</footer>
+
+</body>
+</html>
